@@ -67,7 +67,8 @@ Apoyo en la documentación de código y preparación para sustentación
     ║         Programa: Ingeniería Industrial - UdeA                ║
     ║                                                               ║
     ╚═══════════════════════════════════════════════════════════════╝
-## ESTRUCTURAS DE DATOS - LA SIERRA RESORT NATURAL 
+# ESTRUCTURAS DE DATOS - LA SIERRA RESORT NATURAL 
+
 # 1 DICCIONARIO: ADMIN_USERS
 ADMIN_USERS = {
     'admin': 'admin123',
