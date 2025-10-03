@@ -86,3 +86,26 @@ ADMIN_USERS = {
 
 - Clave: Nombre de usuario (string)
 - Valor: Contraseña (string)
+
+# 2. DICCIONARIO: PRECIOS
+
+PRECIOS = {
+    'familia': 350000,
+    'pareja': 200000,
+    'individual': 120000
+}
+
+# Justificación:
+- Legibilidad: Asocia claramente cada tipo de cliente con su tarifa
+- Mantenibilidad: Centraliza los precios en un solo lugar, fácil de actualizar
+
+# Datos Almacenados:
+
+- Clave: Tipo de cliente ('familia', 'pareja', 'individual')
+- Valor: Precio en pesos colombianos (integer)
+
+# 3. LISTA: clientes
+# Justificación:
+
+- Orden cronológico: Mantiene el orden de llegada de los clientes
+- Tamaño dinámico: Crece automáticamente con cada nuevo registro
