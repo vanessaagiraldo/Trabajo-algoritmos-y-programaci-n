@@ -3,7 +3,7 @@
 La Sierra Resort Natural
 # Lema: 
 Desconecta del mundo, reconecta contigo,  en armonía con la tierra y el mar 
-#layout:
+# layout:
 <img width="736" height="522" alt="Captura de pantalla 2025-10-02 234508" src="https://github.com/user-attachments/assets/da1aeb2a-6a46-4491-a399-3ed4285ddb8f" />
 
 # Descripción:
