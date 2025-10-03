@@ -45,3 +45,33 @@ Creación del sistema de exportación a archivos CSV
 Diseño de la interfaz visual de consola con colores y formato
 Realización de pruebas de funcionalidad y casos de uso
 Apoyo en la documentación de código y preparación para sustentación
+
+# d. VISUAL
+
+╔═══════════════════════════════════════════════════════════════╗
+    ║                                                               ║
+    ║   ██╗      █████╗     ███████╗██╗███████╗██████╗ ██████╗      ║
+    ║   ██║     ██╔══██╗    ██╔════╝██║██╔════╝██╔══██╗██╔══██╗    ║
+    ║   ██║     ███████║    ███████╗██║█████╗  ██████╔╝██████╔╝    ║
+    ║   ██║     ██╔══██║    ╚════██║██║██╔══╝  ██╔══██╗██╔══██╗    ║
+    ║   ███████╗██║  ██║    ███████║██║███████╗██║  ██║██║  ██║    ║
+    ║   ╚══════╝╚═╝  ╚═╝    ╚══════╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ║
+    ║                                                               ║
+    ║              RESORT NATURAL - MANAGEMENT SYSTEM               ║
+    ║                                                               ║
+    ║         [-]  "Desconecta del mundo, reconecta contigo,   [-] ║
+    ║         [-]   en armonía con la tierra y el mar"         [-] ║
+    ║                                                               ║
+    ║         Version: 1.0                                          ║
+    ║         Desarrollado por: Vanessa Giraldo & Tania Ramírez    ║
+    ║         Programa: Ingeniería Industrial - UdeA                ║
+    ║                                                               ║
+    ╚═══════════════════════════════════════════════════════════════╝
+## ESTRUCTURAS DE DATOS - LA SIERRA RESORT NATURAL 
+# 1 DICCIONARIO: ADMIN_USERS
+ADMIN_USERS = {
+    'admin': 'admin123',
+    'vanessa.giraldo': 'sierra2024',
+    'tania.ramirez': 'resort2024'
+}
+
