@@ -49,6 +49,9 @@ Diseño de la interfaz visual de consola con colores y formato
 Realización de pruebas de funcionalidad y casos de uso
 Apoyo en la documentación de código y preparación para sustentación
 
+# a. Visión
+el programa garantizará la correcta distribución y cumplimiento a la demanda, almacenando los datos suministrados por el cliente y brindando mayor organización a la hora de realizar la asignación de habitaciones, adicional a ello proporcionará ganancias, ventas y costos unicamente a quienes cumplan con el rol de administrador dentro del sistema.
+
 # d. VISUAL
 
 ╔═══════════════════════════════════════════════════════════════╗
