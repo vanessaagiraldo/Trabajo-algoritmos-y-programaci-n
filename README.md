@@ -67,7 +67,7 @@ Apoyo en la documentación de código y preparación para sustentación
     ║         Programa: Ingeniería Industrial - UdeA                ║
     ║                                                               ║
     ╚═══════════════════════════════════════════════════════════════╝
-# ESTRUCTURAS DE DATOS - LA SIERRA RESORT NATURAL 
+# f. ESTRUCTURAS DE DATOS - LA SIERRA RESORT NATURAL 
 
 # 1 DICCIONARIO: ADMIN_USERS
 ADMIN_USERS = {
@@ -75,4 +75,14 @@ ADMIN_USERS = {
     'vanessa.giraldo': 'sierra2024',
     'tania.ramirez': 'resort2024'
 }
+# Justificación:
 
+- Acceso rápido O(1): Permite verificar credenciales instantáneamente usando el usuario como clave
+- Relación clave-valor: Asocia naturalmente cada usuario con su contraseñaJustificación:
+- Acceso rápido O(1): Permite verificar credenciales instantáneamente usando el usuario como clave
+- Relación clave-valor: Asocia naturalmente cada usuario con su contraseña
+
+# Datos Almacenados:
+
+- Clave: Nombre de usuario (string)
+- Valor: Contraseña (string)
