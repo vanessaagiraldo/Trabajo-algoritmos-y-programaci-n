@@ -3,6 +3,9 @@
 La Sierra Resort Natural
 # Lema: 
 Desconecta del mundo, reconecta contigo,  en armonía con la tierra y el mar 
+#layout:
+<img width="736" height="522" alt="Captura de pantalla 2025-10-02 234508" src="https://github.com/user-attachments/assets/da1aeb2a-6a46-4491-a399-3ed4285ddb8f" />
+
 # Descripción:
 La Sierra Resort Natural es un sistema integral de gestión hotelera desarrollado en Python que simula la operación completa de un resort ecológico de lujo. Este software permite administrar de manera eficiente todos los procesos operativos del resort, desde la planificación de recursos y la llegada de huéspedes hasta el control financiero y la generación de reportes gerenciales. ste proyecto refleja fielmente la experiencia de la lúdica realizada, transformando un ejercicio práctico en una herramienta tecnológica funcional y escalable.
 
