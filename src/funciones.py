@@ -2,6 +2,7 @@
 # y calcular
 
 from datos import demanda, clientes, PRECIOS
+import os
 
 def planear_demanda():
     print("\n--- PLANEACIÓN DE LA DEMANDA ---")
@@ -63,10 +64,29 @@ def registrar_cliente():
     # Registrar por persona
     for i in range(personas):
         print(f"\nPersona {i+1}:")
-        nombre = input("Nombre: ")
-        apellido = input("Apellido: ")
-        documento = input("Documento: ")
 
+        nombre = input("Nombre: ").strip()
+        apellido = input("Apellido: ").strip()
+        documento = input("Documento: ").strip()
+
+        # Validaciones básicas
+        if nombre == "":
+            print("El nombre no puede ser vacío.")
+            return
+        if apellido == "":
+            print("El apellido no puede ser vacío.")
+            return
+        if documento == "":
+            print("El documento no puede ser vacío.")
+            return
+
+        # Validar que no exista el documento
+        for c in clientes:
+            if c["documento"] == documento:
+                print("Este documento ya está registrado.")
+                return
+
+        # Registrar persona
         clientes.append({
             "nombre": nombre,
             "apellido": apellido,
@@ -112,3 +132,7 @@ def calcular_finanzas():
     print(f" - Grupos pareja:      {grupos_pareja}")
     print(f" - Grupos familia:     {grupos_familia}")
     print(f"\nVentas totales: ${ventas}")
+
+
+def limpiar_consola():
+    os.system('cls' if os.name == 'nt' else 'clear')

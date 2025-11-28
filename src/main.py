@@ -4,7 +4,7 @@
 
 
 # Por ahora solo creamos el menú principal.
-from funciones import planear_demanda, registrar_cliente
+from funciones import planear_demanda, registrar_cliente, calcular_finanzas, limpiar_consola
 from admin import admin_login
 
 def menu_principal():
@@ -22,6 +22,8 @@ def menu_principal():
 
         opcion = input("Seleccione una opción: ")
 
+        limpiar_consola()
+
         if opcion == "1":
             planear_demanda()
 
@@ -30,7 +32,7 @@ def menu_principal():
 
         elif opcion == "3":
             print("\n → Cálculo financiero")
-            # Pendiente
+            calcular_finanzas()
 
         elif opcion == "4":
             admin_login()
