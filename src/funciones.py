@@ -69,15 +69,31 @@ def registrar_cliente():
         apellido = input("Apellido: ").strip()
         documento = input("Documento: ").strip()
 
-        # Validaciones básicas
+        # Validaciones sencillas (sin librerías externas)
+        # Nombre: más de 3 letras y sin números
         if nombre == "":
             print("El nombre no puede ser vacío.")
             return
+        nombre_sin_espacios = nombre.replace(" ", "")
+        if len(nombre_sin_espacios) <= 3 or not nombre_sin_espacios.isalpha():
+            print("Nombre inválido: debe tener más de 3 letras y no contener números.")
+            return
+
+        # Apellido: más de 3 letras y sin números
         if apellido == "":
             print("El apellido no puede ser vacío.")
             return
+        apellido_sin_espacios = apellido.replace(" ", "")
+        if len(apellido_sin_espacios) <= 3 or not apellido_sin_espacios.isalpha():
+            print("Apellido inválido: debe tener más de 3 letras y no contener números.")
+            return
+
+        # Documento: solo números y longitud entre 3 y 15
         if documento == "":
             print("El documento no puede ser vacío.")
+            return
+        if not documento.isdigit() or not (3 <= len(documento) <= 15):
+            print("Documento inválido: debe tener solo números y entre 3 y 15 dígitos.")
             return
 
         # Validar que no exista el documento
