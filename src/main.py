@@ -5,6 +5,7 @@
 
 # Por ahora solo creamos el menú principal.
 from funciones import planear_demanda, registrar_cliente
+from admin import admin_login
 
 def menu_principal():
     # Muestra el menú principal y permite al usuario seleccionar opciones.
@@ -32,8 +33,7 @@ def menu_principal():
             # Pendiente
 
         elif opcion == "4":
-            print("\n → Módulo administrador")
-            # Pendiente
+            admin_login()
         elif opcion == "5":
             print("\nSaliendo del sistema... ¡Hasta pronto!")
             break
