@@ -1,5 +1,6 @@
 # Aquí va el login del administrador y todos los reportes importantes.
 from datos import ADMIN_USERS, clientes, demanda
+from funciones import calcular_finanzas
 
 def admin_login():
     print("\n--- INICIO DE SESIÓN ADMINISTRADOR ---")
@@ -40,7 +41,7 @@ def admin_menu():
             print(demanda)
 
         elif opcion == "4":
-            print("\ncalcular_finanzas (pendiente)")
+            calcular_finanzas()
 
         elif opcion == "5":
             print("Saliendo del administrador...")

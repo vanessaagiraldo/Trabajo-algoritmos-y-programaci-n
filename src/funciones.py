@@ -1,7 +1,7 @@
 # Aquí van las funciones del programa. Se ponen funciones para validar, registrar 
 # y calcular
 
-from datos import demanda, clientes
+from datos import demanda, clientes, PRECIOS
 
 def planear_demanda():
     print("\n--- PLANEACIÓN DE LA DEMANDA ---")
@@ -82,3 +82,33 @@ def registrar_cliente():
     print(f"\nSe registró un grupo tipo '{tipo}' con {personas} personas.")
     print("Estado actual de la demanda:")
     print(demanda)
+
+
+def calcular_finanzas():
+    print("\n--- CÁLCULO DE FINANZAS ---")
+
+    # Contar personas por tipo
+    conteo = {"individual": 0, "pareja": 0, "familia": 0}
+
+    for cliente in clientes:
+        tipo = cliente["tipo"]
+        if tipo in conteo:
+            conteo[tipo] += 1
+
+    # Convertir de personas a grupos
+    grupos_individual = conteo["individual"]        # 1 persona = 1 grupo
+    grupos_pareja = conteo["pareja"] // 2           # 2 personas por grupo
+    grupos_familia = conteo["familia"] // 4         # 4 personas por grupo
+
+    # Calcular ventas
+    ventas = (
+        grupos_individual * PRECIOS["individual"] +
+        grupos_pareja * PRECIOS["pareja"] +
+        grupos_familia * PRECIOS["familia"]
+    )
+
+    print("\nResumen:")
+    print(f" - Grupos individuales: {grupos_individual}")
+    print(f" - Grupos pareja:      {grupos_pareja}")
+    print(f" - Grupos familia:     {grupos_familia}")
+    print(f"\nVentas totales: ${ventas}")
