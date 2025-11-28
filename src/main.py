@@ -4,7 +4,7 @@
 
 
 # Por ahora solo creamos el menú principal.
-from funciones import planear_demanda
+from funciones import planear_demanda, registrar_cliente
 
 def menu_principal():
     # Muestra el menú principal y permite al usuario seleccionar opciones.
@@ -25,8 +25,7 @@ def menu_principal():
             planear_demanda()
 
         elif opcion == "2":
-            print("\n → Registro de clientes")
-            # Pendiente
+            registrar_cliente()
 
         elif opcion == "3":
             print("\n → Cálculo financiero")
