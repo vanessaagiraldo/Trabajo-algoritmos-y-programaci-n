@@ -16,6 +16,12 @@ PRECIOS = {
     "individual": 120000
 }
 
+# Costos por habitación, alimentación por persona y turismo por persona
+COSTOS = {
+    "habitacion": 60000,
+    "alimentacion": 15000,
+    "turismo": 10000
+}
 
 # Lista de clientes registrados
 clientes = []

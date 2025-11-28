@@ -31,7 +31,6 @@ def menu_principal():
             registrar_cliente()
 
         elif opcion == "3":
-            print("\n → Cálculo financiero")
             calcular_finanzas()
 
         elif opcion == "4":
