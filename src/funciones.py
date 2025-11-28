@@ -1,7 +1,7 @@
 # Aquí van las funciones del programa. Se ponen funciones para validar, registrar 
 # y calcular
 
-from datos import demanda, clientes, PRECIOS, COSTOS
+from datos import demanda, clientes, mascotas, PRECIOS, COSTOS
 import os
 
 def planear_demanda():
@@ -63,6 +63,7 @@ def registrar_cliente():
 
     # Registrar por persona
     registros_temporales = []
+    mascotas_temporales = []
     for i in range(personas):
         print(f"\nPersona {i+1}:")
 
@@ -113,6 +114,26 @@ def registrar_cliente():
 
     # Si llegamos aquí, todos los miembros del grupo son válidos: se añaden todos a la lista global
     clientes.extend(registros_temporales)
+
+    trae_mascotas = input("¿Trae mascotas? (s/n): ").strip().lower()
+    if trae_mascotas == 's':
+        if demanda["mascotas"] < 1:
+            print("No hay capacidad para mascotas.")
+            # Remover los clientes añadidos
+            for r in registros_temporales:
+                clientes.remove(r)
+            return
+        else:
+            demanda["mascotas"] -= 1
+            nombre_mascota = input("Nombre de la mascota: ").strip()
+            tipo_mascota = input("Tipo de mascota: ").strip()
+            mascotas_temporales.append({
+                "nombre": nombre_mascota,
+                "tipo": tipo_mascota
+            })
+            print(f"Mascota '{nombre_mascota}' registrada.")
+            mascotas.extend(mascotas_temporales)
+
 
     # Actualizar demanda
     demanda["habitaciones"] -= 1

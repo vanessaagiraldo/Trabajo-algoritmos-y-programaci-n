@@ -26,6 +26,9 @@ COSTOS = {
 # Lista de clientes registrados
 clientes = []
 
+# Lista de mascotas registradas
+mascotas = []
+
 
 # Demanda inicial del resort (planeación)
 demanda = {
