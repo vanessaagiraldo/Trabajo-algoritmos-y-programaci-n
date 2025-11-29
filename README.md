@@ -68,26 +68,8 @@ Para la zona de contraseñas se puede recurrir a getpass, que evita que estas ap
 
 # d. VISUAL
 
-  ______________________________________________________________
-║                                                                ║
-║  ██╗      █████╗   ███████╗██╗███████╗██████╗ ██████╗ █████╗   ║
-║  ██║     ██╔══██╗  ██╔════╝██║██╔════╝██╔══██╗██╔══██╗██╔══██╗ ║
-║  ██║     ███████║  ███████╗██║█████╗  ██████╔╝██████╔╝███████║ ║
-║  ██║     ██╔══██║  ╚════██║██║██╔══╝  ██╔══██╗██╔══██╗██╔══██║ ║
-║  ███████╗██║  ██║  ███████║██║███████╗██║  ██║██║  ██║██║  ██║ ║
-║  ╚══════╝╚═╝  ╚═╝  ╚══════╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ║
-║                                                                ║
-║                 RESORT NATURAL - MANAGEMENT SYSTEM             ║
-║                                                                ║
-║        [-]   "Desconecta del mundo, reconecta contigo,   [-]   ║
-║        [-]   "Desconecta del mundo, reconecta contigo,   [-]   ║
-║        [-]        en armonía con la tierra y el mar"      [-]  ║
-║                                                                ║
-║         Desarrollado por: Vanessa Giraldo y Tania Ramírez      ║
-║         Programa: Ingeniería Industrial - UdeA                 ║
-║                                                                ║
-║   Versión: 1.0                                                 ║
-║________________________________________________________________║
+<img width="472" height="310" alt="image" src="https://github.com/user-attachments/assets/2848fac9-216d-42f6-927c-ca1a434c31b8" />
+
 
     
 # f. ESTRUCTURAS DE DATOS - LA SIERRA RESORT NATURAL 
