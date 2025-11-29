@@ -3,6 +3,7 @@
 
 from datos import demanda, clientes, mascotas, PRECIOS, COSTOS
 import os
+import csv
 
 def planear_demanda():
     print("\n--- PLANEACIÓN DE LA DEMANDA ---")
@@ -210,3 +211,72 @@ def calcular_finanzas():
 
 def limpiar_consola():
     os.system('cls' if os.name == 'nt' else 'clear')
+
+
+def exportar_clientes():
+    with open("clientes.csv", "w", newline="", encoding="utf-8") as archivo:
+        writer = csv.writer(archivo)
+        writer.writerow(["nombre", "tipo"])
+
+        for c in clientes:
+            writer.writerow([c["nombre"], c["tipo"]])
+
+    print("\nArchivo 'clientes.csv' exportado correctamente.")
+
+
+def exportar_finanzas():
+    # Contar personas por tipo
+    conteo_personas = {"individual": 0, "pareja": 0, "familia": 0}
+    for c in clientes:
+        tipo = c.get("tipo")
+        if tipo in conteo_personas:
+            conteo_personas[tipo] += 1
+
+    # Convertir a grupos
+    grupos = {
+        "individual": conteo_personas["individual"],
+        "pareja": conteo_personas["pareja"] // 2,
+        "familia": conteo_personas["familia"] // 4
+    }
+
+    personas_por_tipo = {
+        "individual": 1,
+        "pareja": 2,
+        "familia": 4
+    }
+
+    total_costos = 0
+    total_ventas = 0
+    total_ganancias = 0
+
+    with open("finanzas.csv", "w", newline="", encoding="utf-8") as archivo:
+        writer = csv.writer(archivo)
+        writer.writerow(["tipo", "grupos", "venta_por_grupo", "costo_por_grupo", "ganancia_por_grupo"])
+
+        for tipo, cantidad in grupos.items():
+            if cantidad == 0:
+                continue
+
+            personas = personas_por_tipo[tipo]
+
+            costo_por_grupo = (
+                COSTOS["habitacion"] +
+                COSTOS["alimentacion"] * personas +
+                COSTOS["turismo"] * personas
+            )
+
+            venta_por_grupo = PRECIOS[tipo]
+            ganancia_por_grupo = venta_por_grupo - costo_por_grupo
+
+            total_costos += costo_por_grupo * cantidad
+            total_ventas += venta_por_grupo * cantidad
+            total_ganancias += ganancia_por_grupo * cantidad
+
+            writer.writerow([tipo, cantidad, venta_por_grupo, costo_por_grupo, ganancia_por_grupo])
+
+        writer.writerow([])
+        writer.writerow(["TOTAL_VENTAS", total_ventas])
+        writer.writerow(["TOTAL_COSTOS", total_costos])
+        writer.writerow(["TOTAL_GANANCIAS", total_ganancias])
+
+    print("\nArchivo 'finanzas.csv' exportado correctamente.")

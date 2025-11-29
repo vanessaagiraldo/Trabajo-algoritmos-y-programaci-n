@@ -36,7 +36,15 @@ def menu_principal():
         elif opcion == "4":
             admin_login()
         elif opcion == "5":
-            print("\nSaliendo del sistema... ¡Hasta pronto!")
+            print("\n¿Desea exportar los datos del día a CSV? (s/n)")
+            exportar = input("> ").lower()
+
+            if exportar == "s":
+                from funciones import exportar_clientes, exportar_finanzas
+                exportar_clientes()
+                exportar_finanzas()
+
+            print("\nGracias por usar el sistema. Hasta pronto.")
             break
 
         else:
