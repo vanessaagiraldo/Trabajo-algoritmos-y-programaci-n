@@ -68,26 +68,27 @@ Para la zona de contraseñas se puede recurrir a getpass, que evita que estas ap
 
 # d. VISUAL
 
-    print("  " + "_" * 62)
-    print("║" + " " * 64 + "║")
-    print("║  ██╗      █████╗   ███████╗██╗███████╗██████╗ ██████╗ █████╗   ║")
-    print("║  ██║     ██╔══██╗  ██╔════╝██║██╔════╝██╔══██╗██╔══██╗██╔══██╗ ║")
-    print("║  ██║     ███████║  ███████╗██║█████╗  ██████╔╝██████╔╝███████║ ║")
-    print("║  ██║     ██╔══██║  ╚════██║██║██╔══╝  ██╔══██╗██╔══██╗██╔══██║ ║")
-    print("║  ███████╗██║  ██║  ███████║██║███████╗██║  ██║██║  ██║██║  ██║ ║")
-    print("║  ╚══════╝╚═╝  ╚═╝  ╚══════╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ║")
-    print("║" + " " * 64 + "║")
-    print("║                 RESORT NATURAL - MANAGEMENT SYSTEM             ║")
-    print("║" + " " * 64 + "║")
-    print("║        [-]   \"Desconecta del mundo, reconecta contigo,   [-]   ║")
-    print("║        [-]   \"Desconecta del mundo, reconecta contigo,   [-]   ║")
-    print("║        [-]        en armonía con la tierra y el mar\"      [-]  ║")
-    print("║" + " " * 64 + "║")
-    print("║         Desarrollado por: Vanessa Giraldo y Tania Ramírez      ║")
-    print("║         Programa: Ingeniería Industrial - UdeA                 ║")
-    print("║" + " " * 64 + "║")
-    print("║   Versión: 1.0                                                 ║")
-    print("║" + "_" * 64 + "║")
+  ______________________________________________________________
+║                                                                ║
+║  ██╗      █████╗   ███████╗██╗███████╗██████╗ ██████╗ █████╗   ║
+║  ██║     ██╔══██╗  ██╔════╝██║██╔════╝██╔══██╗██╔══██╗██╔══██╗ ║
+║  ██║     ███████║  ███████╗██║█████╗  ██████╔╝██████╔╝███████║ ║
+║  ██║     ██╔══██║  ╚════██║██║██╔══╝  ██╔══██╗██╔══██╗██╔══██║ ║
+║  ███████╗██║  ██║  ███████║██║███████╗██║  ██║██║  ██║██║  ██║ ║
+║  ╚══════╝╚═╝  ╚═╝  ╚══════╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ║
+║                                                                ║
+║                 RESORT NATURAL - MANAGEMENT SYSTEM             ║
+║                                                                ║
+║        [-]   "Desconecta del mundo, reconecta contigo,   [-]   ║
+║        [-]   "Desconecta del mundo, reconecta contigo,   [-]   ║
+║        [-]        en armonía con la tierra y el mar"      [-]  ║
+║                                                                ║
+║         Desarrollado por: Vanessa Giraldo y Tania Ramírez      ║
+║         Programa: Ingeniería Industrial - UdeA                 ║
+║                                                                ║
+║   Versión: 1.0                                                 ║
+║________________________________________________________________║
+
     
 # f. ESTRUCTURAS DE DATOS - LA SIERRA RESORT NATURAL 
 
