@@ -25,6 +25,7 @@ def menu_principal():
         print("║        [-]   \"Desconecta del mundo, reconecta contigo,   [-]   ║")
         print("║        [-]        en armonía con la tierra y el mar\"      [-]  ║")
         print("  " + "_" * 62)
+        print("║" + " " * 64 + "║")
         print("║                   1. Planeación de la demanda                  ║")
         print("║                   2. Registro de clientes                      ║")
         print("║                   3. Cálculo de costos y ventas                ║")
