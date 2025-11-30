@@ -70,7 +70,77 @@ Para la zona de contraseñas se puede recurrir a getpass, que evita que estas ap
 
 <img width="472" height="310" alt="image" src="https://github.com/user-attachments/assets/2848fac9-216d-42f6-927c-ca1a434c31b8" />
 
+# e. ALGORITMOS
 
+INICIO SistemaResort
+
+    // --- Planeación de la demanda ---
+    Mostrar "Ingrese alistamiento inicial"
+    Solicitar capacidades de habitaciones, alimentación y turismo
+    Guardar datos de alistamiento
+
+    // --- Menú principal del sistema ---
+    REPEAT
+        Mostrar menú:
+            1. Registrar llegada de clientes
+            2. Consultar módulo administrador
+            3. Cerrar sistema
+
+        Leer opción
+
+        SI opción == 1 ENTONCES
+            // --- Registro de clientes ---
+            Mostrar tipos de cliente (individual, pareja, familia)
+            Leer tipoSeleccionado
+
+            Determinar número de personas a registrar según tipo
+            PARA cada persona
+                Solicitar nombre, apellido y documento
+                Validar datos ingresados
+                Guardar persona en lista de clientes
+            FIN PARA
+
+            Actualizar disponibilidad y ventas según el tipo registrado
+            Mostrar "Registro exitoso"
+
+        FIN SI
+
+
+        SI opción == 2 ENTONCES
+            // --- Módulo administrador ---
+            Solicitar usuario y contraseña
+            Validar credenciales
+
+            SI credenciales correctas ENTONCES
+                Mostrar reportes:
+                    - Total de clientes
+                    - Clientes por tipo
+                    - Total de mascotas
+                    - Disponibilidad de habitaciones, turismo y alimentación
+                    - Ventas, costos y ganancia
+
+                // --- Cálculo financiero general ---
+                ventas = totalClientes * precioUnitario
+                costos = costosFijos + costosVariables
+                ganancia = ventas - costos
+
+            SINO
+                Mostrar "Acceso denegado"
+            FIN SI
+
+        FIN SI
+
+    UNTIL opción == 3
+
+    // --- Cierre del sistema ---
+    Preguntar si desea exportar datos a CSV
+    SI respuesta == sí ENTONCES
+        Generar archivo CSV con clientes y totales
+    FIN SI
+
+    Mostrar "Sistema finalizado"
+
+FIN SistemaResort
     
 # f. ESTRUCTURAS DE DATOS - LA SIERRA RESORT NATURAL 
 
